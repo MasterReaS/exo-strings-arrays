@@ -10,3 +10,7 @@ const splitMsg = sanitizeMsg2.split(" ");
 
 let count = 0
 
+for (let i = 0; i < splitMsg.length; i++)
+  if (splitMsg[i] === `BOB`)
+    count++
+console.log(`Il y a ${count} foix le nom BOB dans ce texte`)
