@@ -1,4 +1,7 @@
 const str = 'JS, ECMAScript, esm6 peuvent être considérés comme des alias de Javascript';
 
-console.log(str.indexOf('Javascript'));
-console.log(str.slice(64, 74));
+const jav = 'Javascript'
+
+if (str.includes(jav)); {
+  console.log("Javascript se trouve dans le text")
+}

@@ -1,16 +1,18 @@
-const msg = '\n\n\t\t    AlIcE eT bOb EsSaYeNt De CoMmUnIqUeR sEcReTeMeNt, MaIs EvE vEiLlE  \n\n '
+let str = '\n\n\t\t    AlIcE eT bOb EsSaYeNt De CoMmUnIqUeR sEcReTeMeNt, MaIs EvE vEiLlE  \n\n '
 
-let sanitizeMsg = msg.trim()
-let sanitizeMsg2 = sanitizeMsg.toUpperCase()
+str = str.trim()
+str = str.toLowerCase()
 
+console.log(str)
+if (str.includes('bob')) {
+  console.log('bob existe')
+} else {
+  console.log('bob n\est pas là')
+}
 
-console.log(sanitizeMsg2);
-
-const splitMsg = sanitizeMsg2.split(" ");
-
-let count = 0
-
-for (let i = 0; i < splitMsg.length; i++)
-  if (splitMsg[i] === `BOB`)
-    count++
-console.log(`Il y a ${count} foix le nom BOB dans ce texte`)
+let isExist = str.trim().toLowerCase().includes('bob')
+if (isExist) {
+  console.log('il existe !')
+} else {
+  console.log('il n\existe pas')
+}
